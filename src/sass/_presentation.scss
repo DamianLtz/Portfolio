@@ -1,0 +1,104 @@
+.container-presentation {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  grid-template-rows: 1fr;
+  .name {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    @media (min-width: 991px) {
+      padding-left: 3rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+  .title-presentation {
+    .frontend {
+      font-size: 1.75rem;
+      letter-spacing: 0.05em;
+      @media (min-width: 991px) {
+        font-size: 4.5rem;
+      }
+    }
+    .testerQa {
+      letter-spacing: 0.05em;
+      font-size: 1.75rem;
+      @media (min-width: 991px) {
+        font-size: 4rem;
+        padding-left: 11rem;
+      }
+    }
+  }
+  .text-presentation {
+    position: absolute;
+    width: 200px;
+    bottom: -150px;
+    left: 50px;
+    @media (min-width: 1400px) {
+      bottom: -200px;
+      left: 150px;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .text-presentation {
+      animation: text-presentation-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes text-presentation-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.effect {
+  width: 150px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 350px;
+  margin: auto;
+  z-index: -1;
+  background-color: $primary-color;
+  transition: all 0.5s ease-in-out;
+  filter: blur(60px);
+  transform: rotate(17.62deg);
+  border-radius: 0 0 45% 45%;
+  @media (min-width: 991px) {
+    left: 0;
+    bottom: 350px;
+    width: 375px;
+    height: 718px;
+    filter: blur(90px);
+  }
+}
+.effect-hover {
+  background-color: $secondary-color;
+}
+
+.btn-proyects {
+  background-color: $primary-color;
+  transition: all 0.5s ease-in-out;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.arrow {
+  width: 64px;
+  height: 96px;
+  @media (min-width: 991px) {
+    width: 48px;
+    height: 64px;
+  }
+}
+
+.effect-hover {
+  background-color: $secondary-color;
+}

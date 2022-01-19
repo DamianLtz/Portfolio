@@ -1,0 +1,68 @@
+.bg-footer {
+  background-color: $grey-color;
+  padding: 5rem 0;
+  margin-top: 6rem;
+  @media (min-width: 991px) {
+    padding: 9rem 0;
+  }
+  .contactMe {
+    font-weight: 500;
+  }
+  .mail {
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .github-bg {
+    background-color: $white-color;
+    transition: all 0.35s ease-in-out;
+    &:hover {
+      background-color: $terciary-color;
+      box-shadow: (0 0 28px $terciary-color);
+      transform: scale(1.05);
+      .github {
+        color: $white-color;
+      }
+    }
+    .github {
+      color: $black-color;
+      transition: color 0.35s ease-in-out;
+    }
+  }
+  .linkedin-bg {
+    background-color: $white-color;
+    transition: all 0.35s ease-in-out;
+    &:hover {
+      background-color: $terciary-color;
+      box-shadow: (0 0 28px $terciary-color);
+      transform: scale(1.05);
+      .linkedin {
+        color: $white-color;
+      }
+    }
+    .linkedin {
+      color: $black-color;
+      transition: color 0.35s ease-in-out;
+    }
+  }
+  .download-bg {
+    border-radius: 50%;
+    color: $black-color;
+    background-color: $white-color;
+    transition: all 0.35s ease-in-out;
+    @media (min-width: 991px) {
+      border-radius: 8px;
+    }
+    &:hover {
+      background-color: $terciary-color;
+      box-shadow: (0 0 28px $terciary-color);
+      transform: scale(1.05);
+      p,
+      .download {
+        color: $white-color;
+      }
+    }
+  }
+}

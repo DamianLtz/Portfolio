@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+
+import Navbar from "./components/Navbar";
+import ScrollReveal from "scrollreveal";
+import Presentation from "./components/Presentation";
+import Proyectos from "./components/Proyectos";
+import Footer from "./components/Footer";
 
 function App() {
+
+  useEffect(() => {
+    ScrollReveal().reveal("#Prana", {
+      delay: 250,
+      distance: "50px",
+      duration: 850,
+    });
+    ScrollReveal().reveal("#Personal", {
+      delay: 250,
+      distance: "50px",
+      duration: 850,
+    });
+    ScrollReveal().reveal("#Unidiversidad", {
+      delay: 250,
+      distance: "50px",
+      duration: 850,
+    });
+    ScrollReveal().reveal("#ecommerceCoderHouse", {
+      delay: 250,
+      distance: "50px",
+      duration: 850,
+    });
+    ScrollReveal().reveal(".title-presentation .name", {
+      delay: 250,
+      distance: "50px",
+      duration: 1500,
+    });
+    ScrollReveal().reveal(".title-presentation .frontend", {
+      delay: 650,
+      distance: "50px",
+      duration: 1500,
+    });
+    ScrollReveal().reveal(".title-presentation .testerQa", {
+      delay: 950,
+      distance: "50px",
+      duration: 1500,
+    });
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <main className="container">
+        <Presentation />
+        <Proyectos />
+      </main>
+      <Footer />
+    </>
   );
 }
 

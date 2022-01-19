@@ -1,0 +1,44 @@
+.container-proyects{
+  padding: 5rem 0;
+  @media (min-width: 991px) {
+  padding: 12rem 0;
+  }
+}
+
+
+.icons-sections {
+  width: 48px;
+  height: 48px;
+  @media (min-width: 991px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.title-proyect {
+  font-size: 1.75rem;
+  @media (min-width: 991px) {
+    font-size: 2rem;
+  }
+}
+
+.text-design {
+  color: $text-design;
+  &:hover{
+    color: $text-design
+  }
+}
+
+.color-qa {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.img-proyects {
+  width: 100%;
+  height: auto;
+}
