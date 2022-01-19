@@ -29,7 +29,7 @@ const proyectos = [
     title: "Ecommerce",
     year: 2022,
     info: "Tienda de puntos utilizando HTML, CSS, JS & React.",
-    link: "",
+    link: "https://ecommerce-react-two.vercel.app/",
     section: "FrontEnd",
   },
   {
