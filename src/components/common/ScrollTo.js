@@ -4,11 +4,11 @@ const scrollToTop = () => {
 
 const scrollToProyects = () => {
   if (window.screen.width <= 991) {
-    window.scrollTo(0, 750);
+    window.scrollTo(0, 625);
   } else if (window.screen.width <= 1272) {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 700);
   } else {
-    window.scrollTo(0, 1050);
+    window.scrollTo(0, 950);
   }
 }
 
@@ -18,21 +18,21 @@ const scrollToContact = () => {
 
 const scrollToFrontProyects = () => {
   if (window.screen.width <= 991) {
-    window.scrollTo(0, 750);
+    window.scrollTo(0, 625);
   } else if (window.screen.width <= 1272) {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 700);
   } else {
-    window.scrollTo(0, 1050);
+    window.scrollTo(0, 950);
   }
 }
 
 const scrollToTestingProyects = () => {
   if (window.screen.width <= 991) {
-    window.scrollTo(0, 2100);
+    window.scrollTo(0, 2825);
   } else if (window.screen.width <= 1272) {
-    window.scrollTo(0, 2525);
+    window.scrollTo(0, 3250);
   } else {
-    window.scrollTo(0, 3200);
+    window.scrollTo(0, 3550);
   }
 }
 
