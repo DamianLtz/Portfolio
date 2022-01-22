@@ -22,7 +22,7 @@ const scrollToFrontProyects = () => {
   } else if (window.screen.width <= 1272) {
     window.scrollTo(0, 700);
   } else {
-    window.scrollTo(0, 950);
+    window.scrollTo(0, 900);
   }
 }
 
@@ -32,7 +32,7 @@ const scrollToTestingProyects = () => {
   } else if (window.screen.width <= 1272) {
     window.scrollTo(0, 3250);
   } else {
-    window.scrollTo(0, 3550);
+    window.scrollTo(0, 3800);
   }
 }
 
