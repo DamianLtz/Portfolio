@@ -1,58 +1,17 @@
 import React from "react";
 
+//Otros Componentes:
+
 import Proyecto from "./common/Proyecto";
 import CardMoreProyects from "./common/CardMoreProyects";
+import proyectos from "./common/ListaProyectos"
+
+//Imagenes:
 
 import Frontend from "../img/icons/front.png";
 import Qa from "../img/icons/QA.png";
-import Personal from "../img/main/proyectos/proyectoPersonal.png";
-import Unidiversidad from "../img/main/proyectos/proyectoUniWeb.png";
-import ecommerceCoderHouse from "../img/main/proyectos/proyectoEcommerce.png";
-import Prana from "../img/main/proyectos/proyectoPrana.png"
 import GitHub from "../img/icons/githubLogoCircle.svg";
 import Android from "../img/icons/androidLogoCircle.svg";
-
-const proyectos = [
-  {
-    image: Prana,
-    id: "Prana",
-    title: "Prana",
-    year: 2022,
-    info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño",
-    design: "Agustin Ietta",
-    link: "https://prana-o3qlbx9fv-damianltz.vercel.app/",
-    section: "FrontEnd",
-  },
-  {
-    image: ecommerceCoderHouse,
-    id: "ecommerceCoderHouse",
-    title: "Ecommerce",
-    year: 2022,
-    info: "Tienda de puntos utilizando HTML, CSS, JS, React y Firebase",
-    link: "https://ecommerce-react-two.vercel.app/",
-    section: "FrontEnd",
-  },
-  {
-    image: Unidiversidad,
-    id: "Unidiversidad",
-    title: "Unidiversidad",
-    year: 2021,
-    info: "Maquetado de la Web de Unidiversidad utilizando HTML, CSS & Bootstrap 5.",
-    design: "Unidiversidad",
-    link: "https://damianltz.github.io/UniDiversidad-React",
-    section: "FrontEnd",
-  },
-  {
-    image: Personal,
-    id: "Personal",
-    title: "Personal Argentina",
-    year: 2022,
-    info: "Testing Exploratorio + Diseño y ejecución de Casos de Prueba",
-    design: "Personal",
-    link: "",
-    section: "QA",
-  },
-];
 
 const proyectosFront = proyectos.filter((proyecto) => proyecto.section === "FrontEnd");
 
