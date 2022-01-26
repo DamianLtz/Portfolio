@@ -69,7 +69,7 @@ const Proyectos = () => {
         className="card-proyect-qa"
         text="¿Ver más proyectos de Testing?"
         textLink="Ir a Drive"
-        link="https://github.com/DamianLtz"
+        link="https://drive.google.com/drive/folders/1-PwIzqHEhSzYoB7TcMJbuo53AsedczUM?usp=sharing"
         img={Android}
       />
     </>
