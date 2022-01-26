@@ -1,10 +1,10 @@
 import React from "react";
 
-const Proyecto = ({ image, title, year, info, design, id, link, section }) => {
+const Proyecto = ({ image, title, year, info, design, designLink, id, link, section }) => {
   const Desing = () => {
     return (
       <p className="pb-3 text-light">
-        Diseñado por <span><a href="/" className="text-design">{design}</a></span>
+        Diseñado por <span><a href={designLink} className="text-design">{design}</a></span>
       </p>
     );
   };

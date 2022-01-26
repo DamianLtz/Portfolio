@@ -33,6 +33,7 @@ const Proyectos = () => {
             year={proyecto.year}
             info={proyecto.info}
             design={proyecto.design}
+            designLink={proyecto.designLink}
             id={proyecto.id}
             link={proyecto.link}
             section={proyecto.section}
