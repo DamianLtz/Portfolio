@@ -33,8 +33,12 @@
   background-color: $secondary-color;
   border-color: $secondary-color;
   &:hover {
-    background-color: $secondary-color;
-    border-color: $secondary-color;
+    background-color: $secondary-color-alt;
+    border-color: $secondary-color-alt;
+  }
+  &:focus{
+    background-color: $secondary-color-alt;
+    border-color: $secondary-color-alt;
   }
 }
 

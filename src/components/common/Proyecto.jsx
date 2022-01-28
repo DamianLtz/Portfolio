@@ -31,7 +31,7 @@ const Proyecto = ({ image, title, year, info, design, designLink, id, link, sect
               {design ? <Desing /> : null}
               <a
                 href={link}
-                className={`btn btn-primary rounded-pill px-5 py-2 ${
+                className={`btn btn-primary rounded-pill px-5 py-2 shadow-none ${
                   section === "QA" ? "color-qa" : ""
                 }`}>
                 Ir al Sitio
