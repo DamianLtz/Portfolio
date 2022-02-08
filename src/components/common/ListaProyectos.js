@@ -29,7 +29,7 @@ const proyectos = [
         id: "Unidiversidad",
         title: "Unidiversidad",
         year: 2021,
-        info: "Maquetado de la Web de Unidiversidad utilizando HTML, CSS & Bootstrap 5 junto con la implementación de React a la misma como primer practica con este Framework.",
+        info: "Maquetado de la Web de Unidiversidad utilizando HTML, CSS & Bootstrap 5 junto con la implementación de React a la misma como primer proyecto con esta librería.",
         design: "GorillaSite Headless CMS",
         designLink: "https://www.linkedin.com/company/gorillasite/",
         link: "https://uni-diversidad-react.vercel.app/",
