@@ -27,15 +27,18 @@ const Navbar = () => {
         navbar ? "bg-navbar-scroll" : ""
       }`}>
       <div className="container-fluid">
-        <p className="navbar-brand fs-2 fw-bold btn-logo" onClick={scrollToTop}>
+        <a
+          className="navbar-brand fs-2 fw-bold btn-logo"
+          href="/"
+          onClick={(e) => scrollToTop(e)}>
           DL
-        </p>
+        </a>
         <ul className="d-flex align-items-center">
           <li className="position-relative">
             <Dropdown />
           </li>
           <li className="nav-item ps-3 pe-2">
-            <button className="btn-nav-link" onClick={() => scrollToContact()}>
+            <button className="btn-nav-link" onClick={scrollToContact}>
               Contacto
             </button>
           </li>

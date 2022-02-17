@@ -20,6 +20,8 @@ const Footer = () => {
             <div className="d-flex align-items-center justify-content-evenly justify-content-lg-center pt-5">
               <a
                 href="https://github.com/DamianLtz"
+                target="_blank"
+                rel="noreferrer"
                 className="github-bg rounded-circle p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +35,8 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.linkedin.com/in/damian-laterza/"
+                target="_blank"
+                rel="noreferrer"
                 className="linkedin-bg rounded-circle p-4 mx-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +50,8 @@ const Footer = () => {
               </a>
               <a
                 href={CV}
+                target="_blank"
+                rel="noreferrer"
                 className="download-bg d-flex align-items-center p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

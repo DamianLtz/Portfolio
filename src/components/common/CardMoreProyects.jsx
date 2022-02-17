@@ -7,6 +7,8 @@ const CardMoreProyects = ({ className, text, textLink, link, img }) => {
         <div className="d-flex justify-content-center card-container">
           <a
             href={link}
+            target="_blank"
+            rel="noreferrer"
             className={`card-proyect ${className} position-relative`}>
             <p className="text-light">{text}</p>
             <div className="d-flex align-items-center pt-2 go-to">
