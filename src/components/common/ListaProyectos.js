@@ -1,4 +1,4 @@
-import Personal from "../../img/main/proyectos/proyectoPersonal.png";
+import Personal from "../../img/main/proyectos/personalProyect.png"
 import Unidiversidad from "../../img/main/proyectos/proyectoUniWeb.png";
 import ecommerceCoderHouse from "../../img/main/proyectos/proyectoEcommerce.png";
 import Prana from "../../img/main/proyectos/proyectoPrana.png"
@@ -9,10 +9,19 @@ const proyectos = [
         id: "Prana",
         title: "Prana",
         year: 2022,
-        info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño",
+        info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño (En progreso)",
         design: "Agustin Ietta",
         designLink: "https://www.linkedin.com/in/agustin-ietta/",
         link: "https://prana-o3qlbx9fv-damianltz.vercel.app/",
+        section: "FrontEnd",
+    },
+    {
+        image: Personal,
+        id: "Personal",
+        title: "Personal Argentina",
+        year: 2022,
+        info: "Practica de maquetado y desarrollo de la Web de Personal Argentina utilizando HTML, CSS, SASS, JS & React JS junto con bootstrap 5 + Firebase para el manejo de datos (En progreso)",
+        link: "https://personal-argentina.vercel.app/",
         section: "FrontEnd",
     },
     {
