@@ -20,7 +20,7 @@ const proyectos = [
         id: "Personal",
         title: "Personal Argentina",
         year: 2022,
-        info: "Practica de maquetado y desarrollo de la Web de Personal Argentina utilizando HTML, CSS, SASS, JS & React JS junto con bootstrap 5 + Firebase para el manejo de datos (En progreso)",
+        info: "Practica de maquetado y desarrollo de la Web de Personal Argentina utilizando HTML, CSS, SASS, JS & React JS junto con bootstrap 5 + Firebase para el manejo de datos",
         link: "https://personal-argentina.vercel.app/",
         section: "FrontEnd",
     },
