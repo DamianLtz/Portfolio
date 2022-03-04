@@ -39,10 +39,7 @@ const Proyecto = ({
             <div>
               <div className="d-flex align-items-center">
                 <h1 className="title-proyect text-light">{title}</h1>
-                <div
-                  className={`btn btn-primary mx-3 py-1 px-2 ${
-                    section === "QA" ? "color-qa" : ""
-                  }`}>
+                <div className="btn btn-primary mx-3 py-1 px-2 tag">
                   {year}
                 </div>
               </div>
@@ -52,10 +49,8 @@ const Proyecto = ({
                 href={link}
                 target="_blank"
                 rel="noreferrer"
-                className={`btn btn-primary rounded-pill px-5 py-2 shadow-none ${
-                  section === "QA" ? "color-qa" : ""
-                }`}>
-                {section === "FrontEnd" ? "Ir al Sitio" : "Ver documento"}
+                className="btn btn-primary rounded-pill px-5 py-2 shadow-none">
+                Ir al Sitio
               </a>
             </div>
           </div>

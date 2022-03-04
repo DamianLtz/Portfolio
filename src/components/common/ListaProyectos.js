@@ -43,16 +43,7 @@ const proyectos = [
         designLink: "https://www.linkedin.com/company/gorillasite/",
         link: "https://uni-diversidad-react.vercel.app/",
         section: "FrontEnd",
-    },
-    {
-        image: Personal,
-        id: "Personal",
-        title: "Personal Argentina",
-        year: 2022,
-        info: "Diseño y ejecución de Casos de Prueba + Reporte de Pruebas y Defectos.",
-        link: "https://docs.google.com/spreadsheets/d/1Jj8zcD825pvxDsyDzOJ2HqbIlEDlb6yh/edit?usp=sharing&ouid=109497738715851879054&rtpof=true&sd=true",
-        section: "QA",
-    },
+    }
 ];
 
 export default proyectos

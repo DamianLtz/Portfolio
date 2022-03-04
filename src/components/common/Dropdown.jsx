@@ -35,7 +35,7 @@ const Dropdown = () => {
         <p className="px-3 py-2" onClick={() => scrollToFrontProyects()}>
           Front
         </p>
-        <p className="px-3 py-2" onClick={() => scrollToTestingProyects()}>QA</p>
+        {/* <p className="px-3 py-2" onClick={() => scrollToTestingProyects()}>QA</p> */}
       </AnimateHeight>
     </>
   );
