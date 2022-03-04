@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnimateHeight from "react-animate-height";
-import { scrollToFrontProyects, scrollToTestingProyects } from "./ScrollTo";
+import { scrollToFrontProyects } from "./ScrollTo";
 import CaretDown from "../../img/icons/CaretDown.svg";
 
 const Dropdown = () => {
