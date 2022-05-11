@@ -47,6 +47,7 @@ const Proyecto = ({
               {design ? <Desing /> : null}
               <a
                 href={link}
+                role="button"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary rounded-pill px-5 py-2 shadow-none">

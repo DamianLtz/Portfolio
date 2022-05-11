@@ -9,10 +9,10 @@ const proyectos = [
         id: "Prana",
         title: "Prana",
         year: 2022,
-        info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño (En progreso)",
+        info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño.",
         design: "Agustin Ietta",
         designLink: "https://www.linkedin.com/in/agustin-ietta/",
-        link: "https://prana-o3qlbx9fv-damianltz.vercel.app/",
+        link: "https://pranaestudio.com.ar/",
         section: "FrontEnd",
     },
     {
