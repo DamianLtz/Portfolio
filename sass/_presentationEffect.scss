@@ -13,6 +13,8 @@
   opacity: 0;
   transform: rotate(17.62deg);
   border-radius: 0 0 45% 45%;
+  background: $primary-color;
+  opacity: 1;
   @media (min-width: 991px) {
     left: 0;
     bottom: 350px;
@@ -20,12 +22,6 @@
     height: 718px;
     filter: blur(90px);
   }
-}
-
-.background-default {
-  @extend .effect;
-  background: $primary-color;
-  opacity: 1;
 }
 
 .pride {

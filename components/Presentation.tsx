@@ -13,10 +13,10 @@ const Presentation = () => {
     const colorEvent = () => {
       if (nameOfMonth === "October") {
         setColor("halloween");
-      } else if (nameOfMonth === "December") {
+      } else if (nameOfMonth === "November") {
         setColor("pride");
       } else {
-        setColor("background-default");
+        setColor("");
       }
     };
     colorEvent();

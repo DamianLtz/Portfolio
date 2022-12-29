@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg py-0 px-2 px-lg-4 fixed-top ${
+      className={`navbar navbar-expand-lg py-2 px-2 px-lg-4 fixed-top ${
         navbar ? "bg-navbar-scroll" : ""
       }`}>
       <div className="container-fluid">
