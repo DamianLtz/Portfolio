@@ -1,30 +1,12 @@
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { scrollToProyects } from "../utils/ScrollTo";
 import TextoPresentacion from "../img/icons/textoPresentacion.svg";
-import Telaraña from "./common/EffectHalloween";
 import Arrow from "../img/icons/arrow.svg";
 
+
 const Presentation = () => {
-  const [color, setColor] = useState<string>("");
-
-  useEffect(() => {
-    const nameOfMonth = new Date().toLocaleString("en-US", { month: "long" });
-    const colorEvent = () => {
-      if (nameOfMonth === "October") {
-        setColor("halloween");
-      } else if (nameOfMonth === "November") {
-        setColor("pride");
-      } else {
-        setColor("");
-      }
-    };
-    colorEvent();
-  }, []);
-
   return (
     <>
-      {color === "halloween" && <Telaraña />}
       <div className="container-presentation mt-5">
         <div className="row">
           <div className="col-lg-12 position-relative">
@@ -37,7 +19,7 @@ const Presentation = () => {
                     Developer
                   </span>
                 </h1>
-                <div className={`effect ${color}`}></div>
+                <div className="effect"></div>
               </div>
             </div>
             <Image
@@ -51,8 +33,8 @@ const Presentation = () => {
         <div className="d-flex flex-column justify-content-center align-items-center">
           <button className="btn-proyects" onClick={() => scrollToProyects()}>
             Mis Proyectos
-            <span className={`BorderTopBottom${color}`}></span>
-            <span className={`BorderLeftRight${color}`}></span>
+            <span className="BorderTopBottom"></span>
+            <span className="BorderLeftRight"></span>
           </button>
           <Image
             src={Arrow}

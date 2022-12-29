@@ -1,5 +1,4 @@
 import Head from "next/head";
-import StyleProvider from "../context/StyleContext";
 // Components:
 
 import Navbar from "../components/Navbar";
@@ -10,7 +9,7 @@ import Footer from "../components/Footer";
 // Siguiente es useContext.
 export default function Home() {
   return (
-    <StyleProvider>
+    <>
       <Head>
         <title>Mi Portfolio</title>
         <meta name="description" content="Portfolio - Damian Laterza" />
@@ -26,6 +25,6 @@ export default function Home() {
         <CardGitHub />
       </main>
       <Footer />
-    </StyleProvider>
+    </>
   );
 }

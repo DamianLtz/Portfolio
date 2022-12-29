@@ -7,7 +7,7 @@ const proyectos = [
   {
     image: Prana,
     id: "Prana",
-    title: "Prana",
+    title: "Prana Estudio",
     year: 2022,
     info: "Maquetado y Desarrollo de la Web: Prana estudio de diseño.",
     design: "Agustin Ietta",

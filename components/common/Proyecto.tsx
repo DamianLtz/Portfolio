@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IProyecto } from "../../utils/types";
@@ -48,7 +47,7 @@ const Proyecto = ({
           <div className="d-flex justify-content-end mt-lg-0 mt-5">
             <div>
               <div className="d-flex align-items-center">
-                <h1 className="title-proyect text-light">{title}</h1>
+                <h2 className="title-proyect text-light">{title}</h2>
                 <Tag year={year} />
               </div>
               <p className="py-4 text-light">{info}</p>
@@ -62,7 +61,7 @@ const Proyecto = ({
                   </span>
                 </p>
               )}
-              <ButtonProyect content="Ir al sitio" link={link}/>
+              <ButtonProyect content="Ir al sitio" link={link} />
             </div>
           </div>
         </div>
