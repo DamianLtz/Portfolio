@@ -1,0 +1,33 @@
+.card-container {
+  padding-bottom: 6.5rem;
+  @media (min-width: 991px) {
+    padding-bottom: 12rem;
+  }
+}
+.card-proyect {
+  background-color: $black-alt-color;
+  border-radius: 8px;
+  width: 488px;
+  color: $white-color;
+  transition: color 0.5s ease-in-out;
+  padding: 2rem;
+  z-index: 10;
+  p {
+    color: $primary-color;
+  }
+  svg {
+    transition: margin-left 0.35s ease-in-out;
+    color: $primary-color;
+  }
+  &:hover {
+    svg {
+      margin-left: 0.25rem;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    z-index: -1;
+  }
+}

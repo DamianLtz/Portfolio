@@ -1,0 +1,55 @@
+$font-portfolio: "Poppins", sans-serif;
+
+// Colores
+
+$black-color: #080808;
+$black-alt-color: #151517;
+$white-color: #ffffff;
+$grey-color: #111111;
+$grey-color-scrollbar: #282828;
+$primary-color: #1e50f4;
+$secondary-color: #0a37cb;
+$button-proyects-color: #062899;
+$button-shadow-color: #003cff;
+$text-design: #1071ff;
+
+// Propiedades Compartidas
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+ul,
+li {
+  font-family: $font-portfolio;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $black-color;
+}
+
+.cursor-default {
+  cursor: default;
+}

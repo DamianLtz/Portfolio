@@ -1,0 +1,49 @@
+.bg-footer {
+  background-color: $grey-color;
+  padding: 5rem 0;
+  @media (min-width: 991px) {
+    padding: 9rem 0;
+  }
+  .contactMe {
+    font-weight: 500;
+  }
+  .mail {
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .redes-bg {
+    color: $black-color;
+    background-color: $white-color;
+    transition: all 0.35s ease-in-out;
+    &:hover {
+      background-color: $secondary-color;
+      box-shadow: (0 0 28px $secondary-color);
+      transform: scale(1.05);
+      .red-icon {
+        color: $white-color;
+      }
+    }
+  }
+
+  .download-bg {
+    border-radius: 50%;
+    color: $black-color;
+    background-color: $white-color;
+    transition: all 0.35s ease-in-out;
+    @media (min-width: 991px) {
+      border-radius: 8px;
+    }
+    &:hover {
+      background-color: $secondary-color;
+      box-shadow: (0 0 28px $secondary-color);
+      transform: scale(1.05);
+      p,
+      .download {
+        color: $white-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.container-presentation {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  .name {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    @include cursorDefault;
+    @media (min-width: 991px) {
+      padding-left: 3rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+  .title-presentation {
+    .role-text {
+      @media (min-width: 991px) {
+        width: 75%;
+        margin: auto;
+      }
+    }
+    .frontend {
+      font-size: 2.5rem;
+      letter-spacing: 0.15em;
+      text-align: center;
+      @include cursorDefault;
+      // letter-spacing: 1rem;
+      @media (min-width: 991px) {
+        font-size: 5rem;
+      }
+    }
+    .developer {
+      letter-spacing: 0.15em;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-left: 5rem;
+      @include cursorDefault;
+      @media (min-width: 991px) {
+        font-size: 5rem;
+        padding-left: 18rem;
+      }
+    }
+  }
+  .text-presentation {
+    position: absolute;
+    width: 200px;
+    bottom: -150px;
+    left: 50px;
+    @media (min-width: 1400px) {
+      bottom: -200px;
+      left: 150px;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .text-presentation {
+      animation: text-presentation-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes text-presentation-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.arrow {
+  width: 64px;
+  height: 96px;
+  @media (min-width: 991px) {
+    width: 48px;
+    height: 64px;
+  }
+}

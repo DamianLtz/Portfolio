@@ -1,0 +1,111 @@
+.container-proyects {
+  padding: 5rem 0;
+  @media (min-width: 991px) {
+    padding: 12rem 0;
+  }
+}
+
+.icons-sections {
+  width: 48px;
+  height: 48px;
+  @media (min-width: 991px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.title-proyect {
+  font-size: 1.75rem;
+  @media (min-width: 991px) {
+    font-size: 2rem;
+  }
+}
+
+.text-design {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  color: $text-design;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: $secondary-color;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease-in;
+    transform: scale(0);
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
+  &:hover {
+    color: $text-design;
+  }
+}
+
+.img-proyects {
+  width: 100%;
+  height: auto;
+}
+
+.tag {
+  position: relative;
+  background: transparent;
+  color: $white-color;
+  border-color: transparent;
+}
+
+.BorderTopBottom:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: $button-proyects-color;
+  transition: all 0.5s ease;
+}
+
+.BorderTopBottom:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: $button-proyects-color;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 25px;
+  background: $button-proyects-color;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 25px;
+  background: $button-proyects-color;
+  transition: all 0.5s ease;
+}
+
+.button-proyect {
+  border: 2px solid $button-proyects-color;
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: $button-shadow-color 0px 0px 12px;
+  }
+}

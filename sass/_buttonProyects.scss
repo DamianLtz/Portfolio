@@ -1,0 +1,137 @@
+// ------------- Button Proyects ------------- //
+
+.btn-proyects {
+    position: relative;
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+    background: transparent;
+    color: $white-color;
+    border-color: transparent;
+  }
+  
+  .BorderTopBottom:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: -6px;
+    left: -7px;
+    background: $button-proyects-color;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderTopBottom:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: -6px;
+    right: -7px;
+    background: $button-proyects-color;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRight:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 3px;
+    height: 25px;
+    background: $button-proyects-color;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRight:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -7px;
+    width: 3px;
+    height: 25px;
+    background: $button-proyects-color;
+    transition: all 0.5s ease;
+  }
+  
+  .btn-proyects:hover .BorderTopBottom:before,
+  .btn-proyects:hover .BorderTopBottom:after {
+    width: 178px;
+    transition: all 0.5s ease;
+    box-shadow: $button-proyects-color 0px 0px 12px;
+  }
+  
+  .btn-proyects:hover .BorderLeftRight:before,
+  .btn-proyects:hover .BorderLeftRight:after {
+    height: 64px;
+    transition: all 0.5s ease;
+    box-shadow: $button-shadow-color 0px 0px 12px;
+  }
+  
+  // -------------------------------------- //
+  
+  .btn-proyects {
+    position: relative;
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+    background: transparent;
+    color: $white-color;
+    border-color: transparent;
+  }
+  
+  .BorderTopBottompride:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: -6px;
+    left: -7px;
+    transition: all 0.5s ease;
+    @extend .pride-color-button;
+  }
+  
+  .BorderTopBottompride:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: -6px;
+    right: -7px;
+    @extend .pride-color-button;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRightpride:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 3px;
+    height: 25px;
+    @extend .pride-color-button;
+    transition: all 0.5s ease;
+  }
+  
+  .BorderLeftRightpride:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -7px;
+    width: 3px;
+    height: 25px;
+    @extend .pride-color-button;
+    transition: all 0.5s ease;
+  }
+  
+  .btn-proyects:hover .BorderTopBottompride:before,
+  .btn-proyects:hover .BorderTopBottompride:after {
+    width: 178px;
+    transition: all 0.5s ease;
+  }
+  
+  .btn-proyects:hover .BorderLeftRightpride:before,
+  .btn-proyects:hover .BorderLeftRightpride:after {
+    height: 64px;
+    transition: all 0.5s ease;
+  }

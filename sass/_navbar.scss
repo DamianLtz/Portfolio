@@ -1,0 +1,45 @@
+.navbar {
+  transition: all 0.2s ease-in-out;
+  @include cursorDefault;
+}
+
+.bg-navbar-scroll {
+  background-color: $black-color;
+}
+
+.btn-logo {
+  color: $white-color;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    color: $button-shadow-color;
+  }
+  &:focus {
+    color: $button-shadow-color;
+  }
+}
+
+.nav-item {
+  .btn-nav-link {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .btn-nav-link {
+    position: relative;
+    color: $white-color;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      background-color: $button-proyects-color;
+      width: 100%;
+      height: 2px;
+      transition: all 0.3s ease-in;
+      transform: scale(0);
+    }
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+}

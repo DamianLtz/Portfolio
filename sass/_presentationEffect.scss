@@ -1,0 +1,117 @@
+.effect {
+  width: 150px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 350px;
+  margin: auto;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  filter: blur(60px);
+  opacity: 0;
+  transform: rotate(17.62deg);
+  border-radius: 0 0 45% 45%;
+  @media (min-width: 991px) {
+    left: 0;
+    bottom: 350px;
+    width: 375px;
+    height: 718px;
+    filter: blur(90px);
+  }
+}
+
+.background-default {
+  @extend .effect;
+  background: $primary-color;
+  opacity: 1;
+}
+
+.pride {
+  @extend .effect;
+  @extend .pride-color;
+  opacity: 1;
+}
+
+.halloween {
+  @extend .effect;
+  @extend .halloween-color;
+  opacity: 1;
+}
+
+.halloween-color {
+  background: linear-gradient(
+    180deg,
+    #eb6123 16.66%,
+    33.32%,
+    #cb4603 33.32%,
+    49.98%,
+    #ab2a00 49.98%,
+    66.64%,
+    #8c0300 66.64%,
+    83.3%,
+    #6d0000 83.3%,
+    90%,
+    #4f0000 90%,
+    95%,
+    #350002 95%,
+    97%,
+    #010000 97%,
+    100%,
+    #000000 100%
+  );
+}
+
+.pride-color {
+  background: linear-gradient(
+    180deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
+}
+
+.pride-color-button {
+  background: linear-gradient(
+    324deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
+}
+
+.telaraña-properties {
+  position: absolute;
+  z-index: -1;
+  top: 48px;
+  width: 20%;
+  opacity: 0.35;
+  @media (min-width: 991px) {
+    top: 58px;
+    opacity: 0.2;
+  }
+}
+
+.telaraña {
+  left: 0;
+}
+
+.telaraña-inverted {
+  transform: scaleX(-1);
+  right: 0;
+}
