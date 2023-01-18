@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export interface IProyecto {
+export interface IProyect {
   image: StaticImageData;
   title: string;
   year: number;

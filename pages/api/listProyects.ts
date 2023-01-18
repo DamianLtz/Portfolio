@@ -3,7 +3,7 @@ import Unidiversidad from "../../img/main/proyectos/proyectoUniWeb.png";
 import ecommerceCoderHouse from "../../img/main/proyectos/proyectoEcommerce.png";
 import Prana from "../../img/main/proyectos/proyectoPrana.png";
 
-const proyectos = [
+const proyects = [
   {
     image: Prana,
     id: "Prana",
@@ -42,4 +42,4 @@ const proyectos = [
   },
 ];
 
-export default proyectos;
+export default proyects;

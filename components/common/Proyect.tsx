@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { IProyecto } from "../../utils/types";
+import { IProyect } from "../../utils/types";
 
 import { motion, Variants } from "framer-motion";
 import Tag from "./Tag";
@@ -21,7 +21,7 @@ const cardVariants: Variants = {
   },
 };
 
-const Proyecto = ({
+const Proyect = ({
   image,
   title,
   year,
@@ -29,7 +29,7 @@ const Proyecto = ({
   design,
   designLink,
   link,
-}: IProyecto) => {
+}: IProyect) => {
   return (
     <div className="container-proyects">
       <div className="row">
@@ -70,4 +70,4 @@ const Proyecto = ({
   );
 };
 
-export default Proyecto;
+export default Proyect;

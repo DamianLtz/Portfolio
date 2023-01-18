@@ -1,14 +1,12 @@
 import Image from "next/image";
 //Otros Componentes:
-
-import Proyecto from "./common/Proyecto";
-import proyectos from "../pages/api/ListaProyectos";
+import Proyect from "./common/Proyect";
+import proyects from "../pages/api/listProyects";
 
 //Imagenes:
-
 import Frontend from "../img/icons/front.png";
 
-const Proyectos = () => {
+const Proyects = () => {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center mt-5">
@@ -19,17 +17,17 @@ const Proyectos = () => {
           className="img-fluid icons-sections"
         />
       </div>
-      {proyectos.map((proyecto) => {
+      {proyects.map((proyect) => {
         return (
-          <Proyecto
-            key={proyecto.id}
-            image={proyecto.image}
-            title={proyecto.title}
-            year={proyecto.year}
-            info={proyecto.info}
-            design={proyecto.design}
-            designLink={proyecto.designLink}
-            link={proyecto.link}
+          <Proyect
+            key={proyect.id}
+            image={proyect.image}
+            title={proyect.title}
+            year={proyect.year}
+            info={proyect.info}
+            design={proyect.design}
+            designLink={proyect.designLink}
+            link={proyect.link}
           />
         );
       })}
@@ -37,4 +35,4 @@ const Proyectos = () => {
   );
 };
 
-export default Proyectos;
+export default Proyects;
