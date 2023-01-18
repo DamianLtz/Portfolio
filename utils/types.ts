@@ -20,11 +20,3 @@ export type TButton = {
   link?: string;
   content: string;
 };
-
-// export type TStyle = {
-//   style: "default" | "pride" | "halloween";
-// }
-
-// export interface IStyle {
-//   changeStyle: (actualStyle: TStyle) => void;
-// }

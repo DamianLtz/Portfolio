@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import Link from "next/link";
 import {
   scrollToTop,
   scrollToContact,
-  scrollToFrontProyects,
+  scrollToProyects,
 } from "../utils/ScrollTo";
 
 const Navbar = () => {
@@ -19,10 +20,6 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-
-    // return () => {
-    //   window.removeEventListener("scroll", changeBackground);
-    // };
   }, []);
 
   return (
@@ -30,7 +27,7 @@ const Navbar = () => {
       className={`navbar navbar-expand-lg py-2 px-2 px-lg-4 fixed-top ${
         navbar ? "bg-navbar-scroll" : ""
       }`}>
-      <div className="container-fluid">
+      <Container fluid>
         <Link
           className="navbar-brand fs-2 fw-bold btn-logo"
           href="/"
@@ -39,7 +36,7 @@ const Navbar = () => {
         </Link>
         <ul className="d-flex align-items-center">
           <li className="nav-item pe-2 pe-lg-3">
-            <button className="btn-nav-link" onClick={scrollToFrontProyects}>
+            <button className="btn-nav-link" onClick={scrollToProyects}>
               Proyectos
             </button>
           </li>
@@ -49,7 +46,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-      </div>
+      </Container>
     </nav>
   );
 };

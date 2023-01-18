@@ -2,7 +2,6 @@ import Image from "next/image";
 //Otros Componentes:
 
 import Proyecto from "./common/Proyecto";
-import CardMoreProyects from "./common/CardGitHub";
 import proyectos from "../pages/api/ListaProyectos";
 
 //Imagenes:
@@ -14,7 +13,11 @@ const Proyectos = () => {
     <>
       <div className="d-flex justify-content-center align-items-center mt-5">
         <p className="fs-1 pe-3 text-light">Proyectos</p>
-        <Image src={Frontend} alt="" className="img-fluid icons-sections" />
+        <Image
+          src={Frontend}
+          alt="Icono proyectos front end"
+          className="img-fluid icons-sections"
+        />
       </div>
       {proyectos.map((proyecto) => {
         return (
