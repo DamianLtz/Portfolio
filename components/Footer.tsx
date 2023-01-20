@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="fs-5 text-light">
               Si te interesó mi perfil, podés enviarme un mail a:
             </p>
-            <p className="fs-5 mail">damianlaterza@gmail.com</p>
+            <p className="d-inline-block fs-5 mail">damianlaterza@gmail.com</p>
           </Col>
           <Col lg="6" md="12" sm="12">
             <SocialMedia />

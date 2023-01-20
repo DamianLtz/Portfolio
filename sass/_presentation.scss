@@ -47,6 +47,7 @@
     width: 200px;
     bottom: -150px;
     left: 50px;
+    pointer-events: none;
     @media (min-width: 1400px) {
       bottom: -200px;
       left: 150px;
