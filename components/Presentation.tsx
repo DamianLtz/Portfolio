@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Col, Row } from "react-bootstrap";
 import { scrollToProyects } from "../utils/ScrollTo";
 import TextoPresentacion from "../img/icons/textoPresentacion.svg";
 import Arrow from "../img/icons/arrow.svg";
@@ -8,8 +9,8 @@ const Presentation = () => {
   return (
     <>
       <div className="container-presentation mt-5">
-        <div className="row">
-          <div className="col-lg-12 position-relative">
+        <Row>
+          <Col lg="12" className="position-relative">
             <div className="title-presentation">
               <p className="fs-4 name text-light">Damian Laterza</p>
               <div className="role-text">
@@ -28,8 +29,8 @@ const Presentation = () => {
               className="img-fluid text-presentation d-none d-lg-block"
               priority={true}
             />
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="d-flex flex-column justify-content-center align-items-center">
           <button className="btn-proyects" onClick={() => scrollToProyects()}>
             Mis Proyectos

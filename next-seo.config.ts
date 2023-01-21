@@ -12,14 +12,14 @@ const config: DefaultSeoProps = {
       "Mi Portfolio personal con proyectos que hice durante mi trayecto.",
     images: [
       {
-        url: "<%= require('./portfolio-preview.png') %",
+        url: "./portfolio-preview.png",
         width: 1280,
         height: 720,
         alt: "Og Image Alt",
         type: "image/jpeg",
       },
       {
-        url: "<%= require('./portfolio-preview.png') %",
+        url: "./portfolio-preview.png",
         width: 1280,
         height: 720,
         alt: "Og Image Alt Second",

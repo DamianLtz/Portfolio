@@ -4,11 +4,12 @@ import Image from "next/image";
 // Images:
 
 import GitHub from "../../img/icons/githubLogoCircle.svg";
+import { Col, Row } from "react-bootstrap";
 
 const CardGitHub = () => {
   return (
-    <div className="row">
-      <div className="col-lg-12">
+    <Row>
+      <Col lg="12">
         <div className="d-flex justify-content-center card-container">
           <Link
             href="https://github.com/DamianLtz"
@@ -39,8 +40,8 @@ const CardGitHub = () => {
             <Image src={GitHub} alt="GitHub Logo" />
           </Link>
         </div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 
