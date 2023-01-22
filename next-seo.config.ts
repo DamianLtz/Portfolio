@@ -18,13 +18,6 @@ const config: DefaultSeoProps = {
         alt: "Og Image Alt",
         type: "image/jpeg",
       },
-      {
-        url: "./portfolio-preview.png",
-        width: 1280,
-        height: 720,
-        alt: "Og Image Alt Second",
-        type: "image/jpeg",
-      },
     ],
     siteName: "Damian Laterza Portfolio",
   },
